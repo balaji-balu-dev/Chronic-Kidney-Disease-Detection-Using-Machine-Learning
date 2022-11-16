@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- html tag starts here and definig the language eng-->
+    <head> <!--Header starts-->
+        <title>Early Detection Of Chronic Kidney Disease</title> <!--assigning the title for whole page-->
+        <link rel="stylesheet" type="text/css" href="/static/stylesheets/Prediction.css">  <!--link for text style from css -->
+    </head> <!--Header ends-->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> <!--assigning the font-family -->
+<!--begginig of the style tag-->
+<style>
+    h1{ 
+  font-family: 'Pacifico', cursive;     
+}
+
+
+
+form{
+	width:650px;
+    border-radius:10px;
+    padding:4px
+    
+    }
+    
+
+select{
+	width: 500px;
+	border-radius:4px;
+    padding:12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    box-sizing:border-box;
+    }
+button{
+	width:80px;
+    padding:10px;
+    font-family:brush script mt,cursive;
+    
+}
+
+</style>
+<!--style tag ends here-->
+
+    <center> <!--It will keep content in middle of the page-->
+        <body> <!--Begging of body content-->
+            <div id="demobox"> 
+                <h1>Early Detection Of Chronic Kidney Disease</h1> <!---->
+                <h4>A Machine learning web app built with flask</h4>
+                </div>
+    
+        <form method='POST' action='/predict'> <!--form tag ends here-->
+        <div class="container"> 
+     
+        <p>Please fill in this form to predict the disease</p> <!--assign text as paragraph-->
+        <hr> 
+         <!-- Starts label tags from here -->
+        <label for="blood_urea"><b>Blood Urea:</b></label>
+        <!--assigns input type for label tag-->
+        <br>
+        <input type="number" placeholder="Enter Blood Urea value" name="blood_urea" id="blood_urea" required>
+        <br>
+        <br>
+        <label for="blood glucose random"><b>Blood Glucose Random:</b></label>
+        <input type="number" placeholder="Enter Blood Glucose Random" name="blood glucose random" id="blood glucose random"required>
+
+        <br></br> <!--<b<r>assigning break tag here for and closing </br>-->
+            <label for="coronary_artery_disease"><b>Coronary Artery Disease:</b></label>
+            <br>
+            <select name="coronary_artery_disease" id="coronary_artery_disease"> <!--sarts select variable tag here-->
+                <option value="Yes">Yes</option><!--shows option to select-->
+                <option value="No">No</option>
+            </select><!-- select variable tag will end here-->
+            <hr>
+            <label for="anemia"><b>Anemia:</b></label> <!--label tag for Bloodglucoserandom-->
+            <br>
+            <select name="anemia" id="anemia"> <!--sarts select variable tag here-->
+                <option value="Yes">Yes</option><!--shows option to select-->
+                <option value="No">No</option>
+            </select><!-- select variable tag will end here-->
+            <hr>
+            <label for="pus_cell"><b>Puscell:</b></label> <!--label tag for Hemoglobin-->
+            <br>
+            <select name="pus_cell" id="pus_cell"> <!--sarts select variable tag here-->
+                <option value="Normal">Normal</option><!--shows option to select-->
+                <option value="Abnormal">Abnormal</option>
+            </select><!-- select variable tag will end here-->
+            <hr>
+            <label for="red_blood_cells"><b>Red Blood Cells:</b></label> <!--label tag for PackedCellVolume-->
+            <br>
+            <select name="red_blood_cells" id="red_blood_cells"> <!--sarts select variable tag here-->
+                <option value="Normal">Normal</option><!--shows option to select-->
+                <option value="Abnormal">Abnormal</option>
+            </select><!-- select variable tag will end here-->
+            <hr>        
+            <label for="diabetesmellitus"><b>DiabetesMellitus:</b></label> <!--label tag for Redbloodcellcount-->
+            <br>
+            <select name="diabetesmellitus" id="diabetesmellitus"> <!--sarts select variable tag here-->
+                <option value="Yes">Yes</option><!--shows option to select-->
+                <option value="No">No</option>
+            </select><!-- select variable tag will end here-->
+            <hr>
+            
+            
+            <label for="pedal_edema"><b>PedalEdema:</b></label> <!--label tag for PedalEdema-->
+            <br>
+            <select name="pedal_edema" id="pedal_edema"><!--sarts select variable tag here-->
+                <option value="Yes">Yes</option><!--shows option to select-->
+                <option value="No">No</option>
+            </select> <!-- select variable tag will end here-->
+            <hr>
+            
+            <button type="submit" class="registerbtn">Predict</button></div> <!--assigning button for the page-->
+        
+        </form> <!--form tag ends here-->
+</body><!--Body content ends here-->
+</center> <!--assigns end to center tag-->
+</html><!--html tag ends here-->

@@ -1,0 +1,42 @@
+/* creating a css file */
+/* assigning background image and size for demiobox */
+#demobox {
+    background-image: linear-gradient(#3f5efb,#fc466b) ;
+    height: 175px;
+    padding: 15px;
+    width: auto;
+    text-align: center;
+    align-self: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /* creating class center */
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  /* alighning h3 text in the center */
+h3{
+  text-align: center;
+}
+size{
+  height: fit-content;
+  width: fit-content;
+}
+.center2 {
+  display: block;
+  margin-left: 500px;
+  margin-right: auto;
+  width: 50%;
+}
+.center3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h4{
+  font-family: 'Courier New', Courier, monospace; 
+}
